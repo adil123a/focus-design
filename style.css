@@ -71,3 +71,31 @@
 #contAbout:hover::after{
     width: 4.8rem;
 }
+#cvDbtn{
+    background-color:#424f4f;
+}
+@media only screen and (min-width: 768px) {
+    #aboutMeDiv {
+        width:450px;
+    }
+  }
+@media only screen and (min-width: 1024px) {
+    #aboutMeDiv {
+        width:600px;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    #aboutMeDiv {
+        width:700px;
+    }
+  }
+  @media only screen and (min-width: 1536px) {
+    #aboutMeDiv {
+        width:800px;
+    }
+  }
+  @media only screen and (min-width: 1750px) {
+    #aboutMeDiv {
+        width:900px;
+    }
+  }
