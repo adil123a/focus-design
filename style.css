@@ -74,6 +74,16 @@
 #cvDbtn{
     background-color:#424f4f;
 }
+#myImg{
+    box-shadow: 4px 5px 4px 0px #00999938;
+    transition:0.5s ease-in;
+    transition-delay: .25s;
+}
+#myImg:hover{
+    transform: scale(1.2);
+    filter: grayscale(1);
+    transition: 1s ease-in-out;
+}
 @media only screen and (min-width: 768px) {
     #aboutMeDiv {
         width:450px;
