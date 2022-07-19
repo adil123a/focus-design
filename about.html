@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus Design</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <link rel="shortcut icon" href="image/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -17,30 +17,35 @@
 <body id="body" class="">
     <nav id="navigation" class=" sm:flex flex-row flex-nowrap content-center justify-between items-start "
         data-aos="fade-down">
-        <img id="" class="m-auto sm:m-0 w-14 sm:pl-5 py-5" src="logo.png" alt="">
-        <div id="" class="pt-5 sm:w-1/2">
+        <img id="" class="m-auto sm:m-0 w-14 sm:pl-5 py-5" src="image/logo.png" alt="">
+        <div id="" class="pt-5 mr-2 sm:w-1/2">
             <ul id="" class="flex flex-row flex-nowrap justify-between">
-                <li id="" class="px-3"><a href="index.html" id="" class="text-black">Home</a></li>
-                <li id="" class="px-3"><a href="about.html" id="" class="text-black">About</a></li>
-                <li id="" class="px-3"><a href="" id="" class="text-black">Portfolio</a></li>
-                <li id="" class="px-3"><a href="" id="" class="text-black">Contacts</a></li>
+                <li id="" class="navItem "><a href="index.html" id="" class="block text-black p-3 font-medium">Home</a>
+                </li>
+                <li id="" class="navItem "><a href="about.html" id="" class="block text-black p-3 font-medium">About</a>
+                </li>
+                <li id="" class="navItem "><a href="portfolio.html" id=""
+                        class="block text-black p-3 font-medium">Portfolio</a></li>
+                <li id="" class="navItem "><a href="" id="" class="block text-black p-3 font-medium">Contacts</a></li>
             </ul>
         </div>
     </nav>
-    <section id="" class="" data-aos="fade-down">
+    <section id="" class="">
         <div id="" class="pt-10 m-10">
-            <h1 id="contAbout" class="text-2xl text-center">About</h1>
+            <h1 id="contAbout" class="text-4xl text-center" data-aos="fade-right">About Me</h1>
         </div>
         <div id=""
             class="relative z-10 p-5 sm:p-10 md:flex flex-row flex-nowrap content-center justify-between items-center">
             <div class="img">
-                <img id="myImg" class="w-72 m-10 mx-auto md:mx-0 lg:mx-10" src="people.jpg" alt="" data-aos="zoom-in">
+                <img id="myImg" class="w-72 h-72 m-10 mx-auto md:mx-0 lg:mx-10" src="image/people.jpg" alt=""
+                    data-aos="zoom-in">
 
             </div>
 
             <div id="aboutMeDiv" class="">
-                <h1 id="" class="leading-8 md:leading-10 text-justify text-lg" data-aos="fade-right"
+                <h1 id="" class="leading-8 md:leading-10 text-justify text-lg font-medium" data-aos="fade-right"
                     data-aos-offset="0">
+                    <span id="Name" class="block text-xl py-2 ">Kamran Haider - Designer</span>
                     Hi, my name is
                     Adriano Smith and I began
                     using
@@ -57,15 +62,17 @@
                     maintenance while running on their own for years.
                 </h1>
                 <button id="cvDbtn" class="bg-slate-500 mt-6 py-2 px-4 text-white" data-aos="flip-left"
-                    data-aos-offset="50">Download CV</button>
+                    data-aos-offset="30">Download CV</button>
             </div>
         </div>
-        <img class="w-full absolute z-0 bottom-0" src="wave2.svg" alt="">
+        <img class="w-full absolute z-0 bottom-0" src="image/wave2.svg" alt="" data-aos="fade-right">
     </section>
-
-    <h1 class="text-center py-20"> website in under construction . Technology applyed
-        html,css,tailwind,Javascript,particles
-        js. </h1>
+    <div id="" class="">
+        <h1 id="" class="">Social Links</h1>
+        <div id="" class="container">
+            <a href=""><img src="" alt=""></a>
+        </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
 </body>
