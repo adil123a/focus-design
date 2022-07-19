@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="image/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+    <nav id="navigation" class=" sm:flex flex-row flex-nowrap content-center justify-between items-start "
+        data-aos="fade-down">
+        <img id="" class="m-auto sm:m-0 w-14 sm:pl-5 py-5" src="image/logo.png" alt="">
+        <div id="" class="pt-5 mr-2 sm:w-1/2">
+            <ul id="" class="flex flex-row flex-nowrap justify-between">
+                <li id="" class="navItem "><a href="index.html" id="" class="block text-black p-3 font-medium">Home</a>
+                </li>
+                <li id="" class="navItem "><a href="about.html" id="" class="block text-black p-3 font-medium">About</a>
+                </li>
+                <li id="" class="navItem "><a href="portfolio.html" id=""
+                        class="block text-black p-3 font-medium">Portfolio</a></li>
+                <li id="" class="navItem "><a href="" id="" class="block text-black p-3 font-medium">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="" class="pt-10 m-10">
+        <h1 id="contAbout" class="text-4xl text-center" data-aos="fade-right">My Portfolio</h1>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="website">website</li>
+            <li class="buttons" data-filter="logo">logo</li>
+        </ul>
+
+        <div class="image-container" data-aos="flip-left">
+
+            <a href="image/1.jpg" class="image website">
+                <img src="image/1.jpg" alt="">
+            </a>
+            <a href="image/2.jpg" class="image website">
+                <img src="image/2.jpg" alt="">
+            </a>
+            <a href="image/3.jpg" class="image logo">
+                <img src="image/3.jpg" alt="">
+            </a>
+
+            <a href="image/4.jpg" class="image logo">
+                <img src="image/4.jpg" alt="">
+            </a>
+            <a href="image/5.jpg" class="image logo">
+                <img src="image/5.jpg" alt="">
+            </a>
+
+            <a href="image/6.jpg" class="image logo">
+                <img src="image/6.jpg" alt="">
+            </a>
+            <a href="image/7.jpg" class="image logo">
+                <img src="image/7.jpg" alt="">
+            </a>
+            <a href="image/8.jpg" class="image logo">
+                <img src="image/8.jpg" alt="">
+            </a>
+            <a href="image/9.jpg" class="image logo">
+                <img src="image/9.jpg" alt="">
+            </a>
+            <a href="image/10.jpg" class="image logo">
+                <img src="image/10.jpg" alt="">
+            </a>
+
+            <a href="image/11.jpg" class="image logo">
+                <img src="image/11.jpg" alt="">
+            </a>
+            <a href="image/12.jpg" class="image logo">
+                <img src="image/12.jpg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.buttons').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter')
+
+                if (filter == 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+
+            });
+
+            $('.gallery').magnificPopup({
+                removalDelay: 300,
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+            });
+
+        });
+
+        $('.image').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+            mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+            zoom: {
+                enabled: true, // By default it's false, so don't forget to enable it
+
+                duration: 300, // duration of the effect, in milliseconds
+                easing: 'ease-in-out', // CSS transition easing function
+
+                // The "opener" function should return the element from which popup will be zoomed in
+                // and to which popup will be scaled down
+                // By defailt it looks for an image tag:
+                opener: function (openerElement) {
+                    // openerElement is the element on which popup was initialized, in this case its <a> tag
+                    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                    return openerElement.is('img') ? openerElement : openerElement.find('img');
+                }
+            },
+            retina: {
+                ratio: 2, // Increase this number to enable retina image support.
+                // Image in popup will be scaled down by this number.
+                // Option can also be a function which should return a number (in case you support multiple ratios). For example:
+                // ratio: function() { return window.devicePixelRatio === 1.5 ? 1.5 : 2  }
+
+
+                replaceSrc: function (item, ratio) {
+                    return item.src.replace(/\.\w+$/, function (m) { return '@2x' + m; });
+                } // function that changes image source
+            }
+
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
