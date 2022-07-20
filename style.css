@@ -31,7 +31,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.conTainer2{
+    background-image: url("image/back2.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
 .textGreen{
     color:#009999
 }
