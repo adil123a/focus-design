@@ -31,6 +31,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .textGreen{
     color:#009999
 }
@@ -53,11 +54,33 @@ body{
     width: 4rem;
 }
 
+.seeMore{
+    border:1px solid #08fdd8;
+    position: relative;
+    cursor: pointer;
+
+}
+.seeMore::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height:100%;
+    background-color: #00d5b5;
+    transition: ease-in .25s;
+    z-index:-1
+}
+.seeMore:hover::after{
+    width: 100%;
+}
+.seeMore:hover #seeMoreLink{
+    color:white
+}
 #contAbout{
     position: relative;
     cursor: pointer;
     width: fit-content;
-    margin: auto;
 }
 
 #cvDbtn{
@@ -174,6 +197,9 @@ body{
  /*  */
 /* Alert Responsive Area */
 @media only screen and (min-width: 768px) {
+    #workContent{
+        width:700px;
+    }
     #aboutMeDiv {
         width:450px;
     }
