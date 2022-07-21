@@ -86,7 +86,6 @@ body{
 #contAbout{
     position: relative;
     cursor: pointer;
-    width: fit-content;
 }
 
 #cvDbtn{
@@ -132,6 +131,31 @@ body{
     list-style: none;
 }
 
+.carouselImg{
+    position:relative;
+    height: 300px!important;
+    object-fit: cover;
+    object-position: center;
+    filter:brightness(.7);
+    -webkit-transition: all 0.5s ease-out;
+}
+
+#ViewProject{display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+position: absolute;
+right: 40%;
+bottom: 40%;
+opacity: 0;
+transform:scale(0);
+background:#00d5b5;
+-webkit-transition: all 0.5s ease-out;
+
+}
+
 .gallery .controls .buttons{
     height:40px;
     width: 140px;
@@ -141,14 +165,14 @@ body{
     line-height: 40px;
     cursor: pointer;
     margin:20px;
-    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    box-shadow: 0px 2px 4px #0000000f;
     text-align: center;
     text-transform: uppercase;
     font-weight:500
 }
 
 .gallery .controls .buttons.active{
-    background:#009999;
+    background:#00d5b5;
     color:#fff;
 }
 
@@ -217,6 +241,14 @@ body{
 @media only screen and (min-width: 1024px) {
     #aboutMeDiv {
         width:600px;
+    }
+    .carouselImg:hover{
+        transform:translateY(-20px)   
+    }
+    .item:hover #ViewProject{
+        opacity:1;
+        transform:scale(1.1);
+
     }
     #myImg:hover{
         box-shadow: 4px 5px 4px 0px #00999938;
