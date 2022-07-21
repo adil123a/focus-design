@@ -31,8 +31,16 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.conTainer2{
+.back2{
     background-image: url("image/back2.svg");
+}
+.back3{
+    background-image: url("image/back3.svg");
+}
+.back4{
+    background-image: url("image/back4.svg");
+}
+.conTainer2{
     background-position: right;
     background-repeat: no-repeat;
     background-size: auto;
@@ -154,6 +162,10 @@ transform:scale(0);
 background:#00d5b5;
 -webkit-transition: all 0.5s ease-out;
 
+}
+
+.gif{
+    width:700px
 }
 
 .gallery .controls .buttons{

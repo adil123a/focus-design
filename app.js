@@ -12,23 +12,7 @@ var isBody= document.getElementById('body')
 isBody.addEventListener('contextmenu',e=>{
     e.preventDefault()
 })
-
-//Owl carosel
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  dots:false,
-  autoplayTimeout:1000,
-  autoplay:true,
-  autoplayHoverPause:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:5
-      }
-  }
+//Prevent the text Selecting
+isBody.addEventListener('selectstart',e=>{
+  e.preventDefault()
 })
