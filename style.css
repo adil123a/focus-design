@@ -4,12 +4,13 @@
     font-family: 'Oswald', sans-serif;
     font-weight:bold;
     /* background :#f2f2f2; */
+    cursor:none!important
 }
 body{
     overflow-x:hidden;
     overflow-y: hidden;
     color:#424f4f;
-    cursor:none!important
+
 }
 .ml11 {
     font-weight: 700;
