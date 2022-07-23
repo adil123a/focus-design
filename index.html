@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="image/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="jquery.funnyText.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -18,179 +19,208 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+
 </head>
 
-<body id="body" class="">
-    <!-- Starting of the home page -->
-    <section id="" class=" conTainer w-auto bg-white">
-        <nav id="navigation" class=" sm:flex flex-row flex-nowrap content-center justify-between items-start "
-            data-aos="fade-down">
-            <img id="" class="m-auto sm:m-0 w-14 sm:pl-5 py-5" src="image/logo.png" alt="">
-            <div id="" class="pt-5 mr-2 sm:w-1/2">
-                <ul id="" class="flex flex-row flex-nowrap justify-between">
-                    <li id="" class="navItem "><a href="index.html" id=""
-                            class="block text-black p-3 font-medium">Home</a>
-                    </li>
-                    <li id="" class="navItem "><a href="about.html" id=""
-                            class="block text-black p-3 font-medium">About</a>
-                    </li>
-                    <li id="" class="navItem "><a href="portfolio.html" id=""
-                            class="block text-black p-3 font-medium">Portfolio</a></li>
-                    <li id="" class="navItem "><a href="" id="" class="block text-black p-3 font-medium">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div id="particles-js" data-aos="fade-down"></div>
-        <div id="homeContent" class="w-80 p-3 pt-5 mt-10 sm:ml-10" data-aos="fade-right">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl text-justify sm:text-left">
-                Oh hey! My name is Kamran Haider. I make your imagination into reality.
-            </h1>
-            <div id="" class="pt-5 w-60">
-                <ul id="" class="flex flex-row flex-nowrap justify-between">
-                    <li id="" class="pr-3"><a href="http://" id="" class="menuItem textGreen">Hire Me</a></li>
-                    <li id="" class="pr-3"><a href="http://" id="" class="menuItem textGreen">Full Bio</a></li>
-                    <li id="" class="pr-3"><a href="http://" id="" class="menuItem textGreen">News</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<body id="body" class="" onload="myFuntion()">
+    <div class="cursor"></div>
+    <main id="main-Cont">
 
-    <section id="" class="conTainer2 back2 w-auto py-10 ">
-
-        <div id="" class="p-3 pt-5 mt-10 lg:flex flex-row flex-nowrap justify-between items-end sm:ml-10">
-            <div class="" data-aos="fade-right">
-                <h1 id="contAbout" class="mx-auto text-center lg:text-left lg:mx-0 text-5xl">My Portfolio</h1>
-                <p id="workContent" class="mx-auto lg:mx-0 w-80 pt-10 text-justify text-xl font-normal tracking-wide">
-
-                    A small gallery of recent projects chosen by me.
-                    I've done them all together with amazing people from companies around the globe. It's only a drop in
-                    the
-                    ocean compared to the entire list.
-                    <br>
-                    Interested to see some more? Visit <a style="color:#009999" href="portfolio.html">my work </a>page.
-                </p>
-            </div>
-            <button class="seeMore bg-white mt-6 block mx-auto lg:mr-10 py-3 px-10" data-aos="flip-left"
-                data-aos-offset="30"> <a id="seeMoreLink" href="portfolio.html">
-                    See More</a></button>
-        </div>
-    </section>
-    <!-- The Project view section -->
-    <div class="owl-carousel owl-theme mt-20">
-        <div class="item">
-            <img class="carouselImg" src="image/1.jpg" alt="">
-            <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
-                <a href="portfolio.html">
-                    <h1 class="text-xs font-normal text-white">View Project</h1>
-                </a>
-            </div>
-        </div>
-        <div class="item">
-            <img class="carouselImg" src="image/2.jpg" alt="">
-            <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
-                <a href="portfolio.html">
-                    <h1 class="text-xs font-normal text-white">View Project</h1>
-                </a>
-            </div>
-        </div>
-        <div class="item">
-            <img class="carouselImg" src="image/3.jpg" alt="">
-            <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
-                <a href="portfolio.html">
-                    <h1 class="text-xs font-normal text-white">View Project</h1>
-                </a>
-            </div>
-        </div>
-        <div class="item">
-            <img class="carouselImg" src="image/4.jpg" alt="">
-            <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
-                <a href="portfolio.html">
-                    <h1 class="text-xs font-normal text-white">View Project</h1>
-                </a>
-            </div>
-        </div>
-        <div class="item">
-            <img class="carouselImg" src="image/5.jpg" alt="">
-            <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
-                <a href="portfolio.html">
-                    <h1 class="text-xs font-normal text-white">View Project</h1>
-                </a>
-            </div>
-        </div>
-        <div class="item">
-            <img class="carouselImg" src="image/6.jpg" alt="">
-            <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
-                <a href="portfolio.html">
-                    <h1 class="text-xs font-normal text-white">View Project</h1>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- The myself section -->
-    <section id="" class="conTainer2 back3 w-auto py-10 mt-20">
-
-        <div id="" class="p-3 pt-5 mt-10 lg:flex flex-row flex-nowrap justify-between items-end sm:ml-10">
-            <div class="" data-aos="fade-right">
-                <h1 id="contAbout" class="mx-auto text-center lg:text-left lg:mx-0 text-5xl">Me,Myself and <br> I</h1>
-                <p id="workContent" class="mx-auto lg:mx-0 w-80 pt-10 text-justify text-xl font-normal tracking-wide">
-                    Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of
-                    the current web I've been passionate about web.
-                    For over a decade I had many opportunities to work in a vast spectrum of web technologies what let
-                    me gather a significant amount of various experience.
-                    Working for companies and individuals around the globe I met and learnt from amazing and ambitious
-                    people.
-                </p>
-            </div>
-            <button class="seeMore bg-white mt-6 block mx-auto lg:mr-10 py-3 px-10" data-aos="flip-left"
-                data-aos-offset="30"> <a id="seeMoreLink" href="about.html">
-                    Learn More</a></button>
-        </div>
-
-    </section>
-
-    <!-- The myskills section -->
-    <section id="" class="conTainer2 back4 w-auto py-20 mt-20">
-
-        <div id="" class="p-3 pt-5 mt-10 lg:flex flex-row flex-nowrap justify-between items-end sm:ml-10">
-            <div class="" data-aos="fade-right">
-                <h1 id="contAbout" class="mx-auto text-center lg:text-left lg:mx-0 text-5xl">Skills &<br> Experience
+        <!-- Starting of the home page -->
+        <section id="" class=" conTainer w-auto bg-white">
+            <nav id="navigation" class=" sm:flex flex-row flex-nowrap content-center justify-between items-start "
+                data-aos="fade-down">
+                <img id="" class="m-auto sm:m-0 w-14 sm:pl-5 py-5" src="image/logo.png" alt="">
+                <div id="" class="pt-5 mr-2 sm:w-1/2">
+                    <ul id="" class="flex flex-row flex-nowrap justify-between">
+                        <li id="" class="navItem "><a href="index.html" id=""
+                                class="block text-black p-3 font-medium">Home</a>
+                        </li>
+                        <li id="" class="navItem "><a href="about.html" id=""
+                                class="block text-black p-3 font-medium">About</a>
+                        </li>
+                        <li id="" class="navItem "><a href="portfolio.html" id=""
+                                class="block text-black p-3 font-medium">Portfolio</a></li>
+                        <li id="" class="navItem "><a href="" id=""
+                                class="block text-black p-3 font-medium">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="particles-js" data-aos="fade-down"></div>
+            <div id="homeContent" class="w-80 p-3 pt-5 mt-10 sm:ml-10" data-aos="fade-right">
+                <h1 class=" text-2xl sm:text-3xl lg:text-4xl text-justify sm:text-left">
+                    Oh hey! My name is
+                    <h1 class="ml11">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters">Kamran Haider</span>
+                        </span>
+                    </h1>
+                    <h1 class=" text-2xl sm:text-3xl lg:text-4xl text-justify sm:text-left">
+                        I make your imagination into reality.
+                    </h1>
                 </h1>
-                <p id="workContent" class="mx-auto lg:mx-0 w-80 pt-10 text-justify text-xl font-normal tracking-wide">
-                    Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of
-                    the current web I've been passionate about web.
-                    For over a decade I had many opportunities to work in a vast spectrum of web technologies what let
-                    me gather a significant amount of various experience.
-                    Working for companies and individuals around the globe I met and learnt from amazing and ambitious
-                    people.
-                </p>
+                <div id="" class="pt-5 w-60">
+                    <ul id="" class="flex flex-row flex-nowrap justify-between">
+                        <li id="" class="pr-3"><a href="http://" id="" class="menuItem textGreen">Hire Me</a></li>
+                        <li id="" class="pr-3"><a href="http://" id="" class="menuItem textGreen">Full Bio</a></li>
+                        <li id="" class="pr-3"><a href="http://" id="" class="menuItem textGreen">News</a></li>
+                    </ul>
+                </div>
             </div>
-            <img src="image/gif.gif" class="gif" draggable="false">
-    </section>
+        </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <section id="" class="conTainer2 back2 w-auto py-10 ">
+
+            <div id="" class="p-3 pt-5 mt-10 lg:flex flex-row flex-nowrap justify-between items-end sm:ml-10">
+                <div class="" data-aos="fade-right">
+                    <h1 id="contAbout" class="mySelector uppercase mx-auto text-center lg:text-left lg:mx-0 text-5xl">
+                        My Portfolio
+                    </h1>
+                    <p id="workContent"
+                        class="mx-auto lg:mx-0 w-80 pt-10 text-justify text-xl font-normal tracking-wide">
+
+                        A small gallery of recent projects chosen by me.
+                        I've done them all together with amazing people from companies around the globe. It's only a
+                        drop in
+                        the
+                        ocean compared to the entire list.
+                        Interested to see some more? Visit <a style="color:#009999" href="portfolio.html">my work
+                        </a>page.
+                    </p>
+                </div>
+                <button class="seeMore bg-white mt-6 block mx-auto lg:mr-10 py-3 px-10" data-aos="flip-left"
+                    data-aos-offset="30"> <a id="seeMoreLink" href="portfolio.html">
+                        See More</a></button>
+            </div>
+        </section>
+        <!-- The Project view section -->
+        <div class="owl-carousel owl-theme mt-20">
+            <div class="item">
+                <img class="carouselImg" src="image/1.jpg" alt="">
+                <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
+                    <a href="portfolio.html">
+                        <h1 class="text-xs font-normal text-white">View Project</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carouselImg" src="image/2.jpg" alt="">
+                <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
+                    <a href="portfolio.html">
+                        <h1 class="text-xs font-normal text-white">View Project</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carouselImg" src="image/3.jpg" alt="">
+                <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
+                    <a href="portfolio.html">
+                        <h1 class="text-xs font-normal text-white">View Project</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carouselImg" src="image/4.jpg" alt="">
+                <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
+                    <a href="portfolio.html">
+                        <h1 class="text-xs font-normal text-white">View Project</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carouselImg" src="image/5.jpg" alt="">
+                <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
+                    <a href="portfolio.html">
+                        <h1 class="text-xs font-normal text-white">View Project</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carouselImg" src="image/6.jpg" alt="">
+                <div id="ViewProject" class="w-20 h-20 bg-red-500 rounded-full">
+                    <a href="portfolio.html">
+                        <h1 class="text-xs font-normal text-white">View Project</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- The myself section -->
+        <section id="" class="conTainer2 back3 w-auto py-10 mt-20">
+
+            <div id="" class="p-3 pt-5 mt-10 lg:flex flex-row flex-nowrap justify-between items-end sm:ml-10">
+                <div class="" data-aos="fade-right">
+                    <h1 id="contAbout" class="uppercase mySelector2 mx-auto text-center lg:text-left lg:mx-0 text-5xl">
+                        Me MYself and<br> I
+                    </h1>
+                    <p id="workContent"
+                        class="mx-auto lg:mx-0 w-80 pt-10 text-justify text-xl font-normal tracking-wide">
+                        Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards
+                        of
+                        the current web I've been passionate about web.
+                        For over a decade I had many opportunities to work in a vast spectrum of web technologies what
+                        let
+                        me gather a significant amount of various experience.
+                        Working for companies and individuals around the globe I met and learnt from amazing and
+                        ambitious
+                        people.
+                    </p>
+                </div>
+                <button class="seeMore bg-white mt-6 block mx-auto lg:mr-10 py-3 px-10" data-aos="flip-left"
+                    data-aos-offset="30"> <a id="seeMoreLink" href="about.html">
+                        Learn More</a></button>
+            </div>
+
+        </section>
+
+        <!-- The myskills section -->
+        <section id="" class="conTainer2 back4 w-auto py-20 mt-20">
+
+            <div id="" class="p-3 pt-5 mt-10 lg:flex flex-row flex-nowrap justify-between items-end sm:ml-10">
+                <div class="" data-aos="fade-right">
+                    <h1 id="contAbout" class="mx-auto text-center lg:text-left lg:mx-0 text-5xl">Skills &<br> Experience
+                    </h1>
+                    <p id="workContent"
+                        class="mx-auto lg:mx-0 w-80 pt-10 text-justify text-xl font-normal tracking-wide">
+                        Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards
+                        of
+                        the current web I've been passionate about web.
+                        For over a decade I had many opportunities to work in a vast spectrum of web technologies what
+                        let
+                        me gather a significant amount of various experience.
+                        Working for companies and individuals around the globe I met and learnt from amazing and
+                        ambitious
+                        people.
+                    </p>
+                </div>
+        </section>
+    </main>
+
+
+
+
+    <section class="bg-slate-500" id="loading">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="jquery.funnyText.js"></script>
     <script src="app.js"></script>
     <script>
         // particle js
-        particlesJS("particles-js", { "particles": { "number": { "value": 300, "density": { "enable": true, "value_area": 400.8530152163807 } }, "color": { "value": "#009999" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 5, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": false, "distance": 500, "color": "#ffffff", "opacity": 0.4, "width": 2 }, "move": { "enable": true, "speed": 4, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 881.8766334760375, "rotateY": 1523.2414578222467 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "bubble" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 0.5 } }, "bubble": { "distance": 200, "size": 4, "duration": 0.3, "opacity": 1, "speed": 3 }, "repulse": { "distance": 100, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+        particlesJS("particles-js", { "particles": { "number": { "value": 160, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "random" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 1, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 4, "size_min": 0.3, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 600 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "bubble" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 250, "size": 0, "duration": 2, "opacity": 0, "speed": 3 }, "repulse": { "distance": 400, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
 
         //Owl carousel
         $('.owl-carousel').owlCarousel({
@@ -211,6 +241,58 @@
                 }
             }
         })
+
+        $(document).ready(function () {
+            $('.mySelector').funnyText({
+                speed: 500,
+                direction: 'both'
+            });
+            $('.mySelector2').funnyText({
+                speed: 500,
+                direction: 'both'
+            });
+        });
+        var preloaderMe = document.getElementById('loading')
+        var divCont = document.getElementById('body')
+        function myFuntion() {
+            divCont.style.overflowY = "auto"
+            preloaderMe.style.top = "-100vh"
+            preloaderMe.style.opacity = 0
+            setTimeout(() => preloaderMe.remove(), 1000);
+        }
+
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml11 .line',
+                scaleY: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 700
+            })
+            .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                delay: 100
+            }).add({
+                targets: '.ml11 .letter',
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i + 1)
+            }).add({
+                targets: '.line',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 500
+            });
     </script>
 
 </body>
